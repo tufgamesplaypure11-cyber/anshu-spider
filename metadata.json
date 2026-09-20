@@ -1,0 +1,8 @@
+{
+  "name": "ANSHU SPIDER",
+  "description": "Interactive Universe featuring community game voting, 2D Spider Rooftop Swing arcade, spinning vinyl gramophone, live moment stripes, and cosmic chronometer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

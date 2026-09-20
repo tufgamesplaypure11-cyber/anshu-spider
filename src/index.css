@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-fun: "Bungee", cursive;
+  --font-marker: "Permanent Marker", cursive;
+  --font-tech: "Space Grotesk", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-spiderRed: #ff2a5f;
+  --color-spiderBlue: #0066ff;
+  --color-spiderDark: #0b0f19;
+  --color-spiderCyber: #00f2fe;
+  --color-neonGreen: #39ff14;
+  --color-neonAmber: #ffaa00;
+}
+
+@keyframes textGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-text-video {
+  background: linear-gradient(-45deg, #ff0055, #ff5e00, #ffea00, #00f2fe, #7000ff, #ff0055);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 6s ease infinite;
+  filter: drop-shadow(0 0 25px rgba(255, 42, 95, 0.45));
+}
+
+@keyframes spinVinyl {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.vinyl-spinning {
+  animation: spinVinyl 5s linear infinite;
+}
+
+.vinyl-paused {
+  animation-play-state: paused;
+}
+
+@keyframes floatSpider {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+.float-anim {
+  animation: floatSpider 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #252e42;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a5f;
+}
+
